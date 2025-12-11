@@ -1,0 +1,21 @@
+{
+  "name": "picassa-pin",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch --env-file=.env index.js "
+  },
+  "dependencies": {
+    "@imagekit/nodejs": "^7.1.1",
+    "@imagekit/react": "^5.0.1",
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^5.2.1",
+    "express-fileupload": "^1.5.2",
+    "imagekit": "^6.0.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.0.0",
+    "sharp": "^0.34.5"
+  }
+}

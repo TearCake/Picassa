@@ -1,0 +1,24 @@
+import { useMutation, useQueryClient } from "@tanstack/react-query";
+import React from "react";
+import apiReq from "../../utils/apiReq.js";
+
+const followUser = async (userName) => {
+  const res = await apiReq.post(`/users/follow/${userName}`);
+  return res.data;
+};
+
+export default function FollowButton({ isFollowing, userName }) {
+  const queryClient = useQueryClient();
+
+  const mutation = useMutation({
+    mutationFn: followUser,
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["profile", userName] });
+    },
+  });
+  return (
+    <button onClick={() => mutation.mutate(userName)} disabled={mutation.isPending}>
+      {isFollowing ? "Unfollow" : "Follow"}
+    </button>
+  );
+}

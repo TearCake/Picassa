@@ -1,0 +1,28 @@
+.postInt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intIcons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+}
+
+.intIcons img, .intIcons svg {
+    cursor: pointer;
+
+}
+
+.postInt button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 24px;
+    padding: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
