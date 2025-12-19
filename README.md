@@ -1,6 +1,7 @@
 # Picassa
 
 A full-stack Pinterest-inspired application for creating, sharing, and organizing visual content with an integrated image editor.
+
 Live Demo : https://picassa-frontend.vercel.app
 
 ## Tech Stack
